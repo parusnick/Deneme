@@ -1,0 +1,31 @@
+#     İF KOŞULU 
+ 
+ yaş= int(input("Kaç yaşındasın?: ")) 
+ if yaş >= 18: 
+    print("Sen yetişkinsin!") 
+ elif yaş < 0: 
+   print("Sen daha doğmadın mı la?: ") 
+ else: 
+   print("Sen daha çocuksun!") 
+ 
+#     İki Veya Daha Fazla Koşullu İfade. 
+#   and,or,not 
+ 
+# and ve or ile birden fazla koşulu karşılayabiliriz. İki kşul arasında veya dışında kalan koşullar için kullanılır. 
+ derece=int(input("Hava sıcaklığı ne kadar?: ")) 
+ if derece >= 0 and derece <= 30 : 
+   print("Hava bugün çok güzel!") 
+   print("Hadi dışarı çıkalım") 
+ elif derece < 0 or derece > 30 : 
+   print("Hava bugün çok kötü!") 
+   print("Evde Kal!") 
+ 
+# not ile de oluşturulan koşulların dışında kalan koşulları sağlaması durumu için kullanılır. 
+ 
+ if not(derece >= 0 and derece <= 30) : 
+   print("Hava bugün çok kötü!") 
+  print("Evde Kal!") 
+ 
+ elif not( derece < 0 or derece > 30) : 
+   print("Hava bugün çok güzel!") 
+   print("Hadi dışarı çıkalım") 
